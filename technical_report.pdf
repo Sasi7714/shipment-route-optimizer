@@ -1,0 +1,161 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R 6 0 R 8 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 979 >>
+stream
+BT
+/F1 16 Tf
+72 750 Td
+(Technical Report: Shipment Route Optimization) Tj
+/F1 10 Tf
+0 -28 Td
+() Tj
+0 -14 Td
+(Problem and objective) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(Logistics planners balance shipment cost, transit time, and reliability. This project) Tj
+0 -14 Td
+(is an explainable decision-support API that evaluates alternative routes and) Tj
+0 -14 Td
+(recommends the best route for stated priorities. It is a demonstration, not an) Tj
+0 -14 Td
+(operational routing engine.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(Dataset and system design) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(The synthetic dataset contains 20 Indian origin-destination shipments and 60 route) Tj
+0 -14 Td
+(options. Each option records hubs, INR cost, transit days, delay probability,) Tj
+0 -14 Td
+(congestion risk, and geopolitical risk. CSV/Pandas load the data into SQLite; FastAPI) Tj
+0 -14 Td
+(exposes it; independent scoring, Pareto, and explanation modules make the logic) Tj
+0 -14 Td
+(testable.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 1035 >>
+stream
+BT
+/F1 16 Tf
+72 750 Td
+(Decision framework and explainability) Tj
+/F1 10 Tf
+0 -28 Td
+() Tj
+0 -14 Td
+(Combined risk = 0.50 x delay probability + 0.30 x congestion risk + 0.20 x) Tj
+0 -14 Td
+(geopolitical risk. Every risk input is a 0-1 estimate. Delay gets the highest internal) Tj
+0 -14 Td
+(weight because it most directly affects delivery reliability.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(For each shipment, cost, transit time, and combined risk are min-max normalized, then) Tj
+0 -14 Td
+(inverted because lower is preferable: benefit = 1 - \(value - minimum\) / \(maximum -) Tj
+0 -14 Td
+(minimum\). Equal metric values receive benefit 1.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(The default final score is 0.40 x cost benefit + 0.30 x time benefit + 0.30 x risk) Tj
+0 -14 Td
+(benefit. Users can submit non-negative weights, normalized proportionally. The) Tj
+0 -14 Td
+(response ranks every route and explains the winner against the runner-up, making) Tj
+0 -14 Td
+(trade-offs visible rather than hiding them behind a score.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 1088 >>
+stream
+BT
+/F1 16 Tf
+72 750 Td
+(Multi-objective evaluation, limitations, and next steps) Tj
+/F1 10 Tf
+0 -28 Td
+() Tj
+0 -14 Td
+(Pareto analysis minimizes cost, time, and combined risk independently. A route is) Tj
+0 -14 Td
+(excluded when another option is no worse on all objectives and better on at least one.) Tj
+0 -14 Td
+(The remaining non-dominated routes are valid alternatives: for example, a cheaper) Tj
+0 -14 Td
+(route may be slower than a more reliable air option.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(Automated tests verify the risk formula, priority-sensitive ranking, Pareto dominance,) Tj
+0 -14 Td
+(successful API responses, and invalid input handling. This evaluates consistency of) Tj
+0 -14 Td
+(the decision framework and demonstrates sensitivity to business priorities.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(All values are illustrative and static. A production version should use live carrier) Tj
+0 -14 Td
+(quotes, weather, traffic, port congestion, capacity, carbon constraints, calibrated) Tj
+0 -14 Td
+(risk estimates, audit history, authentication, and monitoring.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+ET
+endstream
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000133 00000 n 
+0000000203 00000 n 
+0000000329 00000 n 
+0000001359 00000 n 
+0000001485 00000 n 
+0000002572 00000 n 
+0000002698 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R >>
+startxref
+3838
+%%EOF

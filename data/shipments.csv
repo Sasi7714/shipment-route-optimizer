@@ -1,0 +1,61 @@
+shipment_id,origin,destination,route_id,intermediate_hubs,cost_inr,transit_days,delay_probability,congestion_risk,geopolitical_risk
+SH001,Chennai,Mumbai,SH001-A,Bengaluru;Pune,15000,4,0.18,0.22,0.05
+SH001,Chennai,Mumbai,SH001-B,Vijayawada;Hyderabad,12000,6,0.35,0.32,0.05
+SH001,Chennai,Mumbai,SH001-C,Chennai Port;Mumbai Port,18500,3,0.09,0.18,0.08
+SH002,Bengaluru,Delhi,SH002-A,Hyderabad;Nagpur,22000,5,0.22,0.24,0.08
+SH002,Bengaluru,Delhi,SH002-B,Pune;Indore,19500,6,0.31,0.28,0.08
+SH002,Bengaluru,Delhi,SH002-C,Chennai Airport;Delhi Airport,28000,2,0.07,0.12,0.06
+SH003,Mumbai,Kolkata,SH003-A,Nashik;Nagpur,21000,5,0.25,0.26,0.07
+SH003,Mumbai,Kolkata,SH003-B,Surat;Raipur,17500,7,0.38,0.30,0.06
+SH003,Mumbai,Kolkata,SH003-C,Mumbai Airport;Kolkata Airport,26500,2,0.08,0.15,0.05
+SH004,Delhi,Jaipur,SH004-A,Gurugram,8500,2,0.14,0.20,0.04
+SH004,Delhi,Jaipur,SH004-B,Alwar,6800,3,0.25,0.16,0.04
+SH004,Delhi,Jaipur,SH004-C,Rewari,7500,2.5,0.17,0.12,0.04
+SH005,Hyderabad,Pune,SH005-A,Solapur,12500,3,0.17,0.19,0.05
+SH005,Hyderabad,Pune,SH005-B,Raichur;Kolhapur,10200,5,0.32,0.21,0.05
+SH005,Hyderabad,Pune,SH005-C,Hyderabad Airport;Pune Airport,17800,1.5,0.06,0.10,0.04
+SH006,Ahmedabad,Chennai,SH006-A,Surat;Bengaluru,23500,5,0.20,0.23,0.05
+SH006,Ahmedabad,Chennai,SH006-B,Indore;Hyderabad,20500,7,0.34,0.27,0.06
+SH006,Ahmedabad,Chennai,SH006-C,Ahmedabad Port;Chennai Port,27000,4,0.12,0.25,0.07
+SH007,Kochi,Delhi,SH007-A,Coimbatore;Bengaluru,24500,6,0.21,0.22,0.06
+SH007,Kochi,Delhi,SH007-B,Salem;Hyderabad;Nagpur,21000,8,0.36,0.29,0.07
+SH007,Kochi,Delhi,SH007-C,Kochi Airport;Delhi Airport,31000,2,0.08,0.13,0.05
+SH008,Kolkata,Guwahati,SH008-A,Siliguri,14500,4,0.24,0.27,0.12
+SH008,Kolkata,Guwahati,SH008-B,Bardhaman;Siliguri,11800,6,0.39,0.31,0.13
+SH008,Kolkata,Guwahati,SH008-C,Kolkata Airport;Guwahati Airport,20500,1.5,0.10,0.15,0.10
+SH009,Jaipur,Lucknow,SH009-A,Agra,10500,3,0.19,0.20,0.05
+SH009,Jaipur,Lucknow,SH009-B,Kota;Kanpur,9200,5,0.30,0.23,0.05
+SH009,Jaipur,Lucknow,SH009-C,Delhi;Lucknow,13500,2.5,0.12,0.18,0.05
+SH010,Pune,Ahmedabad,SH010-A,Mumbai;Surat,11000,3,0.22,0.26,0.04
+SH010,Pune,Ahmedabad,SH010-B,Nashik;Vadodara,9200,4,0.28,0.18,0.04
+SH010,Pune,Ahmedabad,SH010-C,Pune Airport;Ahmedabad Airport,16000,1.5,0.07,0.10,0.03
+SH011,Visakhapatnam,Bengaluru,SH011-A,Vijayawada;Chennai,17500,4,0.18,0.22,0.05
+SH011,Visakhapatnam,Bengaluru,SH011-B,Kurnool;Anantapur,14200,5,0.29,0.19,0.05
+SH011,Visakhapatnam,Bengaluru,SH011-C,Visakhapatnam Airport;Bengaluru Airport,22500,1.5,0.07,0.11,0.04
+SH012,Indore,Mumbai,SH012-A,Nashik,11800,3,0.16,0.17,0.04
+SH012,Indore,Mumbai,SH012-B,Dhule;Thane,9600,4,0.25,0.20,0.04
+SH012,Indore,Mumbai,SH012-C,Indore Airport;Mumbai Airport,15800,1.5,0.06,0.12,0.03
+SH013,Patna,Delhi,SH013-A,Varanasi;Prayagraj,16500,4,0.23,0.24,0.07
+SH013,Patna,Delhi,SH013-B,Gaya;Kanpur,14000,6,0.35,0.27,0.07
+SH013,Patna,Delhi,SH013-C,Patna Airport;Delhi Airport,23000,1.5,0.08,0.12,0.05
+SH014,Nagpur,Surat,SH014-A,Indore;Vadodara,15500,4,0.20,0.22,0.05
+SH014,Nagpur,Surat,SH014-B,Akola;Dhule,13000,5,0.29,0.18,0.05
+SH014,Nagpur,Surat,SH014-C,Nagpur Airport;Surat Airport,21500,1.5,0.07,0.11,0.04
+SH015,Coimbatore,Hyderabad,SH015-A,Salem;Kurnool,14800,4,0.18,0.21,0.05
+SH015,Coimbatore,Hyderabad,SH015-B,Bengaluru;Kurnool,13200,5,0.27,0.19,0.05
+SH015,Coimbatore,Hyderabad,SH015-C,Coimbatore Airport;Hyderabad Airport,20500,1.5,0.06,0.10,0.04
+SH016,Bhubaneswar,Kolkata,SH016-A,Balasore,8500,2,0.19,0.23,0.06
+SH016,Bhubaneswar,Kolkata,SH016-B,Kharagpur,7100,3,0.27,0.18,0.06
+SH016,Bhubaneswar,Kolkata,SH016-C,Bhubaneswar Airport;Kolkata Airport,12800,1,0.06,0.09,0.04
+SH017,Chandigarh,Ahmedabad,SH017-A,Jaipur;Udaipur,19000,5,0.21,0.20,0.05
+SH017,Chandigarh,Ahmedabad,SH017-B,Hisar;Jodhpur,16200,6,0.31,0.23,0.05
+SH017,Chandigarh,Ahmedabad,SH017-C,Chandigarh Airport;Ahmedabad Airport,25500,2,0.08,0.11,0.04
+SH018,Ranchi,Mumbai,SH018-A,Jabalpur;Nashik,22500,6,0.25,0.25,0.07
+SH018,Ranchi,Mumbai,SH018-B,Bokaro;Nagpur,19000,7,0.36,0.28,0.07
+SH018,Ranchi,Mumbai,SH018-C,Ranchi Airport;Mumbai Airport,29000,2,0.09,0.13,0.05
+SH019,Meerut,Dehradun,SH019-A,Muzaffarnagar,7200,2,0.16,0.19,0.08
+SH019,Meerut,Dehradun,SH019-B,Roorkee,6100,3,0.23,0.16,0.08
+SH019,Meerut,Dehradun,SH019-C,Ghaziabad;Dehradun,9800,1.5,0.08,0.14,0.08
+SH020,Mangaluru,Chennai,SH020-A,Udupi;Bengaluru,18500,5,0.20,0.21,0.05
+SH020,Mangaluru,Chennai,SH020-B,Mysuru;Salem,15800,6,0.30,0.18,0.05
+SH020,Mangaluru,Chennai,SH020-C,Mangaluru Airport;Chennai Airport,24500,2,0.07,0.10,0.04
